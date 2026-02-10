@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #0a0f1e, #112240);
+  color: #f5f7fa;
+  overflow-x: hidden;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  color: #58a6ff;
+  margin-top: 10px;
+}
+
+/* Sections */
+.section {
+  padding: 80px 15%;
+}
+
+h2 {
+  margin-bottom: 20px;
+  border-left: 4px solid #58a6ff;
+  padding-left: 10px;
+}
+
+/* Skills */
+.skills span {
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #112240;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.skills span:hover {
+  transform: scale(1.15);
+  background: #58a6ff;
+  color: #0a0f1e;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  padding: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #c9d1d9;
+}
+
+/* Custom Cursor */
+.cursor {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #58a6ff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
